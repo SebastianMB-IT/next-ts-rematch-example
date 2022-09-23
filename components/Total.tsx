@@ -1,6 +1,5 @@
-import React from 'react'
 import { useSelector } from "react-redux";
-import { RootState } from '../pages/store';
+import { RootState } from '../store';
 
 export const Total = () => {
 

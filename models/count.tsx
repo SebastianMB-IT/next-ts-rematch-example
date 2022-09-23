@@ -8,8 +8,7 @@ export const count = createModel<RootModel>()({
 	},
 	effects: (dispatch) => ({
 		async incrementAsync() {
-			await setTimeout(() => console.log('timeout'), 1000)
-			dispatch.count.increment()
+			await setTimeout(() => dispatch.count.increment(), 1000)
 		},
 	}),
 })

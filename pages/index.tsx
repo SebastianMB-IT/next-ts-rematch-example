@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import { useDispatch } from "react-redux";
-import { Dispatch } from "./store";
-import { Total } from '../components/Total'
+import { Dispatch } from "../store";
+import { Total } from "../components/Total";
+import { AddLog } from "../components/AddLog";
 
 const Home: NextPage = () => {
   const dispatch = useDispatch<Dispatch>();
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
           -2
         </button>
       </div>
+      <AddLog />
     </div>
   );
 };
