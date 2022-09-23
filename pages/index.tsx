@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState, Dispatch } from "./store";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "./store";
+import { Total } from '../components/Total'
 
 const Home: NextPage = () => {
-  const count = useSelector((state: RootState) => state.count);
   const dispatch = useDispatch<Dispatch>();
 
   return (
     <div className={`${styles.centered} ${styles.container}`}>
-      <h2>{count}</h2>
+      <Total />
       <div className={styles.column}>
         <button
           className={styles.button}
