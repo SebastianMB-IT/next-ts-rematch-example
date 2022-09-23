@@ -108,6 +108,38 @@
   margin-left: 0.5rem;
 }
 
+.centered {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #3f54be;
+  padding: .75rem 1rem;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.red {
+  background: #d0312d;
+}
+
+.column {
+  display: flex;
+  gap: .5rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
